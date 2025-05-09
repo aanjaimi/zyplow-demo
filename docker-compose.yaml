@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: zyplow-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass password
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
