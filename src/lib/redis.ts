@@ -19,6 +19,7 @@ export async function getRedisClient() {
   return redisClient;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function cacheData(key: string, data: any) {
   try {
     const client = await getRedisClient();
