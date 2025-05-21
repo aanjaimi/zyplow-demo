@@ -15,6 +15,7 @@ This application demonstrates the implementation of Redis caching with Next.js t
 - **Next.js 15** - React framework
 - **Redis** - Caching solution
 - **Tailwind CSS** - Styling
+- **SHADCN UI** - Reusable components
 - **TypeScript** - Type safety
 - **Docker** - Containerization
 - **JSONPlaceholder API** - Public API for demo data
@@ -114,7 +115,3 @@ The application includes built-in performance tracking:
   - Total page load: ~100-200ms
 
 This represents a **60-80% improvement** in data retrieval time when using Redis caching.
-
-## Scaling Considerations
-
-For scaling this application to handle thousands or millions of daily users:
