@@ -32,9 +32,10 @@ This application demonstrates the implementation of Redis caching with Next.js t
 The easiest way to get started is using the setup script:
 
 ```bash
-# Make the setup script executable
+# copy .env.exmaple into a .env file
 cp .env.example .env
 
+# Make the setup script executable
 chmod +x src/scripts/setup.sh
 
 # Run the setup script
