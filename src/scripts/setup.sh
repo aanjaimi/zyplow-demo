@@ -29,11 +29,6 @@ print_colored "=== Setting up Zyplow Demo ==="
 print_colored "Installing dependencies..."
 npm install
 
-# Install and configure shadcn/ui
-print_colored "Setting up shadcn/ui components..."
-npx shadcn@latest init -y
-npx shadcn@latest add card button avatar badge tabs alert progress
-
 # Start Redis container
 print_colored "Starting Redis container..."
 docker-compose up -d

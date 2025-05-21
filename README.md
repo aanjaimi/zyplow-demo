@@ -33,10 +33,12 @@ The easiest way to get started is using the setup script:
 
 ```bash
 # Make the setup script executable
-chmod +x scripts/setup.sh
+cp .env.example .env
+
+chmod +x src/scripts/setup.sh
 
 # Run the setup script
-./scripts/setup.sh
+./src/scripts/setup.sh
 ```
 
 This script will:
@@ -115,19 +117,3 @@ This represents a **60-80% improvement** in data retrieval time when using Redis
 ## Scaling Considerations
 
 For scaling this application to handle thousands or millions of daily users:
-
-### Infrastructure
-
-1. **Horizontal Scaling:**
-   - Deploy multiple Next.js instances behind a load balancer
-   - Use serverless deployment (e.g., Vercel) for auto-scaling
-   - Implement Redis Cluster for distributed caching
-
-2. **Edge Caching:**
-   - Leverage CDN for static assets and pages
-   - Use edge caching for frequently accessed data
-   - Implement stale-while-revalidate pattern for fresh content
-
-### Cache Optimization
-
-1. **Cache Partitioning:**
